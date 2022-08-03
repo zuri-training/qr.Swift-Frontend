@@ -161,22 +161,104 @@ td {
 
 /* BOTTOM */
 .bottom {
-    padding: 0% 15% 0% 15%;
+    padding: 5% 15% 0% 15%;
+}
+
+.bottomheadr {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bottomcontent {
+    display: flex;
+}
+
+.testimonial {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    /* border: 1px solid blue; */
+    padding: 30px;
+}
+
+.comment {
+    display: flex;
+    /* border: 1px solid green; */
+    padding: 40px 0px 40px 0px;
 
 }
 
-.bottomheader {}
+.profilepic img {
+    width: 60%;
+}
 
-.bottomcontent {}
+.profile {
+    /* border: 1px solid red; */
+    margin-left: -4%;
+}
 
-.comment {}
+.profilename {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -5px;
+}
 
-.profilepic {}
+.profilejob {
+    font-size: x-small;
+    padding-top: 10px;
+    line-height: 15px;
+}
 
-.profile {}
+.commentbox {
+    border: 1px solid black;
+    padding: 70px;
+    text-align: center;
+    font-size: larger;
+    line-height: 200%;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
 
-.profilename {}
+.commentbox2 {
+    border: 1px solid black;
+    padding: 70px;
+    text-align: center;
+    font-size: larger;
+    line-height: 150%;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
 
-.profilejob {}
+.btmbtns {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid green; */
+    justify-content: center;
+    padding-bottom: 70px;
+}
 
-.commentbox {}
+.btm button {
+    background: #ffffff;
+    Width: 400px;
+    Height: 80px;
+    color: #6750A4;
+    border: 1px solid #6750A4;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.btm button:hover {
+    background: #6750A4;
+    color: #ffffff;
+}
+
+/* STYLE GUIDES
+COLORS
+-Primary Color-Purple : #6750A4; -Secondary Color- Light-Pink: #EBD4CB; -Neutral Color- Gray- #EBD4CB;
+
+FONTS
+Josefin Sans
+
+`
+
+` `font-family: 'Josefin Sans', sans-serif;` */
