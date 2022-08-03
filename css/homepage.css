@@ -149,15 +149,65 @@ table,
 td {
     margin-top: 50px;
     padding: 5px;
-    background: #6750A4;
-    color: #E1DCED;
-    border: 1px solid #E1DCED;
+    background: #E1DCED;
+    color: #6750A4;
+    border: 1px solid #6750A4;
     width: 95%;
+    border-collapse: collapse;
+    border-right: hidden;
+    border-top: #6750A4;
+    border-left: hidden;
+    /* border-bottom: #ffffff; */
 }
 
+#tabbtm {
+    border-bottom: hidden;
+}
 
+/* MID-BOTTOM */
+.midgrid {
+    /* width: 10%; */
+    justify-content: center;
+    display: grid;
+    grid-template-areas:
+        'a b'
+        'c d'
+        'e f'
+    ;
+}
 
+.share {
+    text-align: center;
+    border: 1px solid black;
+    padding: 110px 165px;
+    margin: 20px;
+}
 
+.shareicon {
+    padding: 10px;
+}
+
+.sharevia {
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.shareas {
+    padding: 15px 0px 40px 0px;
+    font-weight: bold;
+}
+
+.midgrid button {
+    padding: 15px 75px;
+    border: 1px solid #6750A4;
+    background-color: #ffffff;
+}
+
+.midgrid button:hover {
+    background-color: #6750A4;
+    color: #ffffff;
+}
 
 /* BOTTOM */
 .bottom {
