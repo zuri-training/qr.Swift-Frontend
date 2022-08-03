@@ -1,9 +1,11 @@
 # STYLE GUIDES
 
 ## COLORS
--Primary Color-Purple : #6750A4;
--Secondary Color- Light-Pink: #EBD4CB;
--Neutral Color- Gray-  #EBD4CB;
+-Primary Color-Purple : hsl(255, 34%, 16%);
+-Secondary Color- Light-Pink: background: hsla(17, 7%, 29%, 1);
+;
+-Neutral Color- Gray- background: hsla(0, 0%, 18%, 1);
+ ;
 
 
 ## FONTS 
