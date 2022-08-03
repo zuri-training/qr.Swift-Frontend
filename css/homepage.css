@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*HERO*/
+.hero {
+    background: #E1DCED;
+    padding: 0% 15% 0% 15%;
+}
+
+.herocontent {
+    display: flex;
+    flex-direction: row;
+}
+
+.herotext {
+    width: 60%;
+    padding-top: 40px;
+}
+
+.revolution {
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 70px;
+}
+
+.sss {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.illus1 {
+    width: 40%;
+}
+
+.illus1 img {
+    width: 90%;
+    padding-top: 50px;
+}
+
+.herobtns {
+    display: flex;
+    flex-direction: row;
+}
+
+.herobutton {
+    background: #E1DCED;
+    Width: 300px;
+    Height: 80px;
+    color: #6750A4;
+    border: 1px solid #6750A4;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.herobutton:hover {
+    background: #6750A4;
+    color: #E1DCED;
+    /* color: #EBD4CB; */
+}
+
+.midheadr1 {
+    padding: 5% 0% 2% 0%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.midlogo {
+    text-align: center;
+}
+
+.midlogo .i4g {
+    /* width: 250px; */
+    /* height: 100px;  */
+    width: 21%;
+    height: 10%;
+    margin: 0% 2% 0% 0%;
+}
+
+.midlogo .hng {
+    /* width: 250px;
+    height: 100px; */
+    width: 20%;
+    height: 10%;
+    margin: 0% 1% 0% 1%;
+
+}
+
+.midlogo .zuri {
+    /* width: 200px;
+    height: 100px; */
+    width: 17%;
+    height: 10%;
+    margin: 0% 0% 0% 2%;
+
+}
+
+
+.midheadr2 {
+    padding: 5% 0% 4% 0%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.midcontent {
+    display: flex;
+    flex-direction: row-reverse;
+    /* border: 1px solid red; */
+    padding: 0% 15% 0% 15%;
+
+}
+
+.midcontent .illus2 {
+    width: 50%;
+    /* border: 1px solid green; */
+    margin: auto;
+}
+
+.midcontent img {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.midtext {
+    /* padding:; */
+    width: 45%;
+    font-size: 20px;
+    line-height: 35px;
+    margin-right: 150px;
+    /* border: 1px solid blue; */
+}
+
+
+table,
+td {
+    margin-top: 50px;
+    padding: 5px;
+    background: #6750A4;
+    color: #E1DCED;
+    border: 1px solid #E1DCED;
+    width: 95%;
+}
+
+
+
+
+
+/* BOTTOM */
+.bottom {
+    padding: 0% 15% 0% 15%;
+
+}
+
+.bottomheader {}
+
+.bottomcontent {}
+
+.comment {}
+
+.profilepic {}
+
+.profile {}
+
+.profilename {}
+
+.profilejob {}
+
+.commentbox {}
