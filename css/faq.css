@@ -83,6 +83,7 @@ main {
 }
 .top > img {
   width: 80vw;
+  max-width: 45rem;
 }
 .top > h1 {
   font-weight: 700;
