@@ -199,7 +199,7 @@ header ul li {
 
 .midtext {
     /* padding:; */
-    width: 45%;
+    width: 65%;
     font-size: 20px;
     line-height: 35px;
     margin-right: 150px;
@@ -503,3 +503,276 @@ Josefin Sans
     color: hsla(0, 0%, 91%, 1);
     text-decoration: none;
 } */
+
+/* RESPONSIVE */
+
+@media (max-width:1395px) {
+
+    .midtext {
+        width: 120%;
+    }
+
+    table {
+        font-size: 18px;
+        width: 125%;
+    }
+
+    .midcontent .illus2 {
+        width: 103%;
+    }
+
+    .commentbox {
+        font-size: 20px;
+        padding: 20px;
+        line-height: 200%;
+    }
+
+    .commentbox2 {
+        font-size: 20px;
+        padding: 20px;
+        line-height: 160%;
+    }
+
+    .share {
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 80px 100px;
+        margin: 20px;
+    }
+
+    .btm button {
+        Width: 250px;
+        Height: 70px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1024px) {
+    .herocontent {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .herotext {
+        width: 70%;
+        padding-top: 40px;
+    }
+
+    .revolution {
+        padding-top: 50px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .sss {
+        width: 80%;
+        padding-top: 50px;
+        font-size: 25px;
+    }
+
+    .illus1 {
+        width: 40%;
+    }
+
+    .illus1 img {
+        width: 100%;
+        padding-top: 120px;
+    }
+
+    .herobtns {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .herobutton {
+        Width: 200px;
+        Height: 60px;
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+
+    .midheadr1 {
+        font-size: 35px;
+    }
+
+    .midheadr2 {
+        font-size: 35px;
+    }
+
+    .midtext2 {
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .mid .midheadr3 {
+        margin-bottom: -10px;
+        font-size: 30px;
+
+    }
+
+    .midheadr3 {
+        font-size: 30px;
+    }
+
+    .midheadr4,
+    .midtext3,
+    .midtop button {
+        font-size: 17px;
+        /* border: 1px solid red; */
+    }
+
+    .midtop button {
+        padding: 20px;
+    }
+
+    .share {
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 50px 70px;
+        margin: 20px;
+    }
+
+    .commentbox {
+        font-size: 16px;
+    }
+
+    .commentbox2 {
+        font-size: 16px;
+    }
+
+    .btm button {
+        Width: 250px;
+        Height: 70px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:900px) {
+    .hero {
+        padding: 0% 0% 0% 0%;
+    }
+
+    .herocontent {
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        margin-top: -8%;
+    }
+
+    .herobtns {
+        width: 90%;
+        margin-left: auto;
+    }
+
+    .revolution {
+        font-size: 35px;
+        line-height: 50px;
+
+    }
+
+    .sss {
+        width: 90%;
+    }
+
+    .illus1 {
+        width: 40%;
+    }
+
+    .illus1 img {
+        width: 100%;
+        padding-top: 120px;
+    }
+
+    .herobtns {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .herobutton {
+        Width: 190px;
+    }
+
+
+    .midcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .midcontent .midtext,
+    .midcontent .illus2 {
+        margin: 0%;
+    }
+
+    table,
+    td {
+        width: 80%;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .midheadr1 {
+        font-size: 35px;
+    }
+
+    .midheadr2 {
+        font-size: 35px;
+    }
+
+    .midtext2 {
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .mid .midheadr3 {
+        margin-bottom: -10px;
+        font-size: 30px;
+
+    }
+
+    .midheadr3 {
+        font-size: 30px;
+    }
+
+    .midheadr4,
+    .midtext3,
+    .midtop button {
+        font-size: 17px;
+        /* border: 1px solid red; */
+    }
+
+    .midtop button {
+        padding: 20px;
+    }
+
+    .share {
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 50px 70px;
+        margin: 20px;
+    }
+
+    .commentbox {
+        font-size: 16px;
+    }
+
+    .commentbox2 {
+        font-size: 16px;
+    }
+
+    .btm button {
+        Width: 250px;
+        Height: 70px;
+        font-size: 18px;
+    }
+}
