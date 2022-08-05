@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/header&footer.css">
+    <link rel="stylesheet" href="/css/sign-up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <figure class="logo"><img src="/assets/Logo(1).svg" alt="logo"></figure>
+        <ul>
+            
+            <li><a href="">QR.Codes</a></li>
+            <li><a href="">API</a></li>  
+            <li><a href="">FAQ</a></li> 
+            <li><a href="">Why Us?</a></li> 
+            <li><a href="">Contact Us</a></li> 
+        </ul>
+        <div class="user_btn_container">
+         <button class="user_btn">Register</button> 
+         <button class="user_btn login_btn">Login</button>   
+        </div>
+        <div class="toggle_menu">
+            <img src="/assets/hamburger-mobile.svg" alt="hamburger" class="toggle_menu_img">
+            <img src="/assets/close-square.svg" alt="close hamburger" class="toggle_menu_img show" >
+        </div>
+
+        <div class="mobile-menu">
+            <div class="mobile-menu_btn">
+                <button class="user_btn"><a href="/html/sign-up.html">Register</a></button> 
+                <button class="user_btn login_btn"><a href="/html/sign-in.html">Login</a></button>   
+               </div>
+               <ul class="mobile-menu_list">
+            
+                <li><a href="">QR.Codes</a></li>
+                <li><a href="">API</a></li>  
+                <li><a href="">FAQ</a></li> 
+                <li><a href="">Why Us?</a></li> 
+                <li><a href="">Contact Us</a></li> 
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_content">
+            <div class="form">
+                <div class="heading">
+                    <div class="main_heading">
+                        Lets Get Started
+                    </div>
+                    <div class="main_subheading">
+                        Create an account to see all features
+                    </div>
+                </div>
+                <div id="form"><form name="registration" id="form" method="get" onsubmit="return validation();">
+                    <div class="form_inputs">
+                        <div class="form_title">First name</div>
+                        <input type="text" name="first_name" id="first_name"  placeholder="John">
+                    </div>
+                    <div class="form_inputs">
+                        <div class="form_title">Last name</div>
+                        <input type="text" name="last_name" id="last_name"  placeholder="Doe">
+                    </div>
+                    <div class="form_inputs">
+                        <div class="form_title">Username</div>
+                        <input type="text" name="username" id="username"  placeholder="John">
+                    </div>
+                    <div class="form_inputs">
+                        <div class="form_title">Email</div>
+                        <input type="email" name="email" id="email"  placeholder="johndoe@gmail.com">
+                    </div>
+                    <div class="form_inputs">
+                        <div class="form_title">Password</div>
+                        <input type="password" name="password" id="password" minlength="8" placeholder="Enter password">
+                    </div>
+                    <div class="register_button_2">
+                    <button type="submit" id="register_button_2">Register</button>
+                </div>
+                </form></div>
+                <div class="question">
+                    Already have an account?
+                </div>
+                <div class="sign_in_button">
+                    <button id="sign_in_button"><a href="/html/sign-in.html" style="text-decoration: none; color: #45356D;">Sign in</a></button>
+                </div>
+            </div>
+            <div class="border"></div>
+            <div class="sign_up_image">
+                <img src="/assets/sign-up_illustration.svg" alt="" id="sign_up_image">
+            </div>
+        </div>
+    </main>
+
+
+
+    <!--Footer-->
+
+    <footer>
+    <div class="footer_logo"><img src="/assets/qrSwift_logo.svg" alt="logo"></div>
+    <h2 class="footer-name">QR.SWIFT</h2>
+    <div class="social-media-container">
+        <p>Please connect us via</p>
+        <div>
+            <a href="" target="_blank"><img src="/assets/linkedin-icon.svg" alt="linkedin"></a>
+            <a href="" target="_blank"><img src="/assets/instagram-icon.svg" alt="instagram"></a>
+            <a href="" target="_blank"><img src="/assets/slack-icon.svg" alt="slack"></a>
+            <a href="" target="_blank"><img src="/assets/facebook-icon.svg" alt="facebook"></a>
+            <a href="" target="_blank"><img src="/assets/twitter-icon.svg" alt="twitter"></a>
+     
+        </div>
+    </div>
+    <div class="footer-pages">
+       <a href="">About us</a> 
+       <a href="">FAQ</a>
+       <a href="">Contact us</a>
+       <a href="">API</a>
+       <a href="">Demo</a>
+       <a href="">Terms and Condition</a>
+       <a href="">Privacy</a>
+    </div>
+    </footer>
+    <script src="/javascript/header&footer.js"></script>
+</body>
+</html>
