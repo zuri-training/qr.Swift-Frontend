@@ -236,13 +236,23 @@ td {
         'a b'
         'c d'
         'e f';
+}
 
+.prev,
+.next,
+.dot {
+    /* display: none; */
+}
+
+#grid2,
+#grid4 {
+    text-align: end;
 }
 
 .midtop img {
     width: 75%;
     /* border: 1px solid blue; */
-    margin: 50px 0px 20px 70px;
+    margin: 50px 0px 20px 0px;
 }
 
 /* MID-MIDDLE */
@@ -288,7 +298,7 @@ td {
 }
 
 .midbtn button {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 20px;
     padding: 20px 50px;
     background: none;
@@ -612,7 +622,6 @@ Josefin Sans
     .mid .midheadr3 {
         margin-bottom: -10px;
         font-size: 30px;
-
     }
 
     .midheadr3 {
@@ -672,10 +681,14 @@ Josefin Sans
         margin-left: auto;
     }
 
+    .herobutton {
+        margin-top: 0px;
+        Width: 190px;
+    }
+
     .revolution {
         font-size: 35px;
         line-height: 50px;
-
     }
 
     .sss {
@@ -691,15 +704,13 @@ Josefin Sans
         padding-top: 120px;
     }
 
-    .herobtns {
-        display: flex;
-        flex-direction: row;
+    .illus2 {
+        text-align: center;
     }
 
-    .herobutton {
-        Width: 190px;
+    .illus2 img {
+        width: 50%;
     }
-
 
     .midcontent {
         display: flex;
@@ -714,18 +725,65 @@ Josefin Sans
 
     table,
     td {
-        width: 80%;
+        width: 60%;
         font-size: 16px;
         margin-left: auto;
         margin-right: auto;
     }
 
+    .midtop {
+        padding: 0%;
+        width: 80%;
+        display: grid;
+        grid-template-rows: repeat(6);
+        /* grid-row-gap: 20px; */
+    }
+
+    #grid1 {
+        grid-area: 2;
+        /* border: 1px solid red; */
+    }
+
+    #grid2 {
+        /* border: 1px solid yellow; */
+        grid-area: 1;
+    }
+
+    #grid3 {
+        /* border: 1px solid green; */
+        grid-area: 5;
+    }
+
+    #grid4 {
+        /* border: 1px solid blue; */
+        grid-area: 4;
+    }
+
+    #grid5 {
+        /* border: 1px solid white; */
+        grid-area: 3;
+    }
+
+    #grid6 {
+        /* border: 1px solid black; */
+        grid-area: 6;
+    }
+
+    #grid2,
+    #grid4 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        /* outline: 1px solid #6750A4; */
+        width: 60%;
+    }
+
     .midheadr1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .midheadr2 {
-        font-size: 35px;
+        font-size: 33px;
     }
 
     .midtext2 {
@@ -734,9 +792,8 @@ Josefin Sans
     }
 
     .mid .midheadr3 {
-        margin-bottom: -10px;
+        margin-bottom: 10px;
         font-size: 30px;
-
     }
 
     .midheadr3 {
@@ -746,19 +803,13 @@ Josefin Sans
     .midheadr4,
     .midtext3,
     .midtop button {
-        font-size: 17px;
-        /* border: 1px solid red; */
-    }
-
-    .midtop button {
-        padding: 20px;
+        font-size: 18px;
+        /* margin-top: 20px; */
+        /* border: 1px solid gold; */
     }
 
     .share {
-        text-align: center;
-        border: 1px solid black;
-        border-radius: 10px;
-        padding: 50px 70px;
+        padding: 25px 45px;
         margin: 20px;
     }
 
@@ -771,8 +822,109 @@ Josefin Sans
     }
 
     .btm button {
-        Width: 250px;
+        Width: 240px;
         Height: 70px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:900px) {
+    .bottomheadr {
+        text-align: center;
+    }
+
+    .bottomcontent {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 75%;
+    }
+}
+
+@media (max-width:768px) {
+    .herobutton {
+        width: 170px;
+    }
+
+    .midbtn button {
+        width: 270px;
+        padding: 15px;
         font-size: 18px;
+    }
+
+    .btmbtns button {
+        width: 220px;
+    }
+
+    .midgrid {
+        max-width: 100%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        display: list-item;
+        /* border: 1px solid purple; */
+        padding: 5%;
+
+    }
+
+    .share {
+        display: none;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        padding: 15px 25px;
+        color: red;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 50px;
+        /* user-select: none; */
+        border: 1px solid brown;
+
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: blue;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
     }
 }
