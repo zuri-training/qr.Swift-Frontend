@@ -14,6 +14,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1.4% 7%;  
+    position: sticky;
+    top: 0;
 }
 
 .logo img{
@@ -105,17 +107,23 @@ footer{
 
  }
 
-
+body{
+    background:#E7E7E7;
+    color: #2E2E2E;
+   
+}
 /*Static QR  Section*/
 section{
     box-sizing: border-box;
     padding: 5rem 7%; 
+   
 }
 
 section .dynamic-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;    
+    justify-content: space-between;  
+   
 }
 #dynamic-info-mobile{
     display:none;
@@ -125,6 +133,7 @@ section .dynamic-container .dynamic-info-left{
     width: 55%;
     justify-content: center;
     margin-right:3rem;
+    
 }
 section .dynamic-container .dynamic-info-right{
     display: inline-block;
@@ -150,11 +159,12 @@ section .dynamic-container .dynamic-info-right img{
 section .dynamic-features, .features-type, .patners-container{
     margin: 5rem 0;
     width: 100%;
+ 
 }
 
 section .dynamic-features .features-border{
     border: 1px solid #45356D;
-    padding: 0.3rem 0;
+    padding: 0.3rem 1rem; 
 }
 section .dynamic-features .features-border .feature{
     align-items: center;
@@ -214,6 +224,7 @@ section .features-list .features-list-row .sub-feature-container .feature-genera
     background-color: white;
     font-weight: 700;
     border-radius: 4px;
+    transition: all, 0.3s;
 }
 
 section .features-list .features-list-row .sub-feature-container .feature-generate button:hover{ 
@@ -266,7 +277,7 @@ display: none;
         height: 93.2vh;
         width: 100vw;
         position: absolute;
-        top: 6.8%;
+        top: 100%;
         left: 0;     
         padding: 2rem;
         
@@ -299,10 +310,11 @@ display: none;
     section .dynamic-container .static-info-left h2{
         line-height: 2rem;
         font-size: 1.9rem;
+       
     }
     section .dynamic-container .static-info-left p{
         line-height: 1.5rem;
-        font-size: 1.0rem;
+        font-size: 1.2rem;
         margin: 1.5rem 0;
     }
     section .dynamic-container .static-info-right img{
@@ -349,7 +361,7 @@ display: none;
     }
     section .dynamic-container .dynamic-info-left p{
         line-height: 1.5rem;
-        font-size: 0.8rem;
+        font-size: 0.95rem;
         margin: 1.2rem 0;
     }
     section .dynamic-features .features-border .feature{
@@ -362,7 +374,7 @@ display: none;
         width: 0.7rem;
     }
     section .dynamic-features .features-border .feature p{
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         font-weight: 500;
     }
     section .dynamic-features, .features-type, .patners-container{
