@@ -7,155 +7,107 @@
 header{
     background-color:hsla(256, 32%, 90%, 1);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1.4% 7%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo img{
     display: block;
    
 }
-header a {
-    text-decoration: none;
-}
-header ul{
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
-}
-header ul li{
-    margin-right: 1rem;
-   color: hsla(256, 34%, 32%, 1);
 
-}
-.user_btn_container{
-display: flex;
-gap: 2rem;
-}
-.user_btn{
-   width: 9rem; 
-   height:3rem;
-   border: 1px solid #45356D ;
-   background-color:#45356D ;
-   border-radius: 4px;
-   color:#FBF6F5;
-}
-.login_btn{
-    background-color:#E1DCED ;
-    color: #45356D;
-}
-.toggle_menu{
-    display:none;
-}
-.mobile-menu{
-    display:none;
-}
-.main_content{
-    display: flex;
 
+body{
+    background:#E7E7E7 
 }
-.form{
-    width: 50%;
-}
+
+
 
 .heading{
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    position: static;
     justify-content: center;
-    margin-top: 1em;
+    margin-top: 3rem;
+ 
+
 }
 .main_heading{
     font-family: 'Josefin Sans';
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 700;
     align-items: center;
     color: #2E2E2E;
 }
 .main_subheading{
     font-family: 'Josefin Sans';
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 400;
     align-items: center;
     color: #9D9D9D;
 }
-#form{
-    margin-left: 5rem;
+.mobile-hero-img{
+    display: none;
+}
+.hero-img{
+width: 22.5rem;
+}
+.hero-img img{
+    width: 100%;
+}
+.form_section{
+    width: 100vw;
+ display: flex;
+ flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Josefin Sans";
+    margin-top: 2rem;
 }
 .form_title{
-    margin-bottom: .2rem;
-    font-size: 1.4em;
-}
-#first_name,#last_name,#username,#email,#password{
-    width: 30rem;
-    height: 3em;
-    position: relative;
+margin-bottom: 0.5rem;
+font-family: "Josefin Sans";
 }
 .form_inputs{
-    margin-top: 1em;
+width: 20rem;
+height: 4rem;
+margin: 1rem 0;
+
 }
-.sign_up_image{
-    margin-top: 2em;
-    width: 45%;
+.form_inputs input{
+    width: 100%;
+    height: 2.5rem;
+    padding: 0 1rem;
+    font-family: "Josefin Sans";
+    font-size: 1.1rem;
+   
 }
-#sign_up_image{
-    width: 70%;
-}
-.border{
-    width: 5%;
-}
-.register_button_2{
-    display: flex;
-    justify-content: center;
-    margin-left: -9em;
-}
+
 #register_button_2{
+    width: 14rem;
     height: 3rem;
-    width: 10em;
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5em;
-    border-radius: 8px;
-    border-width: 0;
-    color: white;
-    background-color: #45356D;
+    margin-top: 3rem ;
+    background:hsla(256, 34%, 32%, 1);
+    border: 0;
+    border-radius: 4px;
+    color: #f5f1f1;
+    font-family: "Josefin Sans";
+    font-size: 1.3rem;
+}
 
-    margin-top: 1em;
-
-}
-#register_button_2:hover{cursor: pointer;}
-.question{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    margin-top: 1rem; 
-    font-weight: 300;
-    font-size: 2rem;
-    color: #806DB3;;
-}
-.sign_in_button{
-    display: flex;
-    justify-content: center;
-}
-#sign_in_button{
-    position: relative;
-    height: 3rem;
-    width: 7em;
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5rem;
-    border-radius: 8px;
-    border-width: 1px;
-    border-color: #45356D;
-    margin-top: .4em;
-}
 footer{
     background-color: hsla(256, 34%, 32%, 1);
     display: flex;
@@ -203,110 +155,22 @@ margin-top: 4rem;
         display: none;
     
     }
-    .user_btn_container{
-        display: none;
+    .hero-img{
+        
         }
-    .toggle_menu{
-        display:block;
-     
-        height: 1.7rem;
-    }
-    .toggle_menu_img{
-        width:100%;
-        height: 100%;
-       
-    }
-    .show{
-display: none;
-    }
-
-    .mobile-menu{
-        background:white ;
-        height: 93.2vh;
-        width: 100vw;
-        position: absolute;
-        top: 6.8%;
-        left: 0;     
-        padding: 2rem;
-        
-    }
-    .mobile-menu_list{
-        color: black;
-    }
-    .mobile-menu_btn{
-        display:flex;
-        flex-direction: column;
-        gap: 2rem;
-
-    }
-    .mobile-menu_list{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        margin-top: 7rem ;
-        
-    }
-    .mobile-menu_list li a{
-     color: black;
-        
-    }
-    .active{
-        display: block;
-        animation: fadeIn 500ms ease-in-out;
-     
-    }
-    .main_content{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .sign_up_image{
-        
-    }
-    #sign_up_image{
-        width: 100vw;
-        height: 50vw;
-    }
-    .form{
-        width: 100vw;
-    }
-    #form{
-        margin-left: 8em;
-        justify-content: center;
-        
-    }
-    .form_title{
-        font-size: 1.5rem;
-        margin-bottom: .4rem;
-    }
-    .form_inputs{
-        justify-content: center;
-    }
-
+  
+}
 @media screen and (max-width:700px) {
-    .main_content{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .sign_up_image{
-        
-    }
-    #sign_up_image{
-        width: 100vw;
-    }
-    .form{
-        width: 100vw;
-    }
-    #form{
-        margin-left: 0.3rem;
-        
-    }
-    .form_title{
-        font-size: 1rem;
-        margin-bottom: .4rem;
-    }
-    #first_name,#last_name,#username,#email,#password{
-        width: 24rem;
-    }
+   .mobile-hero-img{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   }
+   .desktop-hero-img{
+    display: none;
+   }
     .footer_logo{
    text-align: start;
     }  
@@ -317,25 +181,6 @@ display: none;
 }
 
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-       
-    }
-    to {
-        opacity: 1;
-        
-    }
-}
-    
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
 
 
 
