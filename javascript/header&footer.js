@@ -11,6 +11,14 @@ toggleMenu.addEventListener("click", function () {
 });
 
 
+const HeaderLogo = document.querySelector(".header-logo");
+
+HeaderLogo.addEventListener("click", ()=>{
+  window.location.href = "index.html"
+})
+
+
+
 function validation(){
     var firstName=document.registration.first_name.value
     var lastName=document.registration.last_name.value

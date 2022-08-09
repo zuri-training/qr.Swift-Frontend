@@ -40,3 +40,8 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+const HeaderLogo = document.querySelector(".header-logo");
+
+HeaderLogo.addEventListener("click", ()=>{
+  window.location.href = "index.html"
+})
