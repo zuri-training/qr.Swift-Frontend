@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+    background-color: #E7E7E7;
+
+}
+
+.container {
+    padding: 5% 0% 3% 0%;
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-header {
+    font-size: 40px;
+    font-weight: bold;
+    color: #45356D;
+}
+
+p {
+    width: 90%;
+    margin-top: 3%;
+    font-size: 18px;
+    color: #2e2e2e
+}
+
+table {
+    width: 90%;
+}
+
+td {
+    padding-top: 3%;
+    font-size: 16px;
+    color: #2e2e2e
+}
+
+input {
+    width: 100%;
+    margin-top: -2%;
+    border: 1px solid gray;
+    background-color: #E7E7E7;
+    font-size: 16px;
+    padding: 12px;
+}
+
+textarea {
+    width: 100%;
+    font-size: 22px;
+    padding: 12px;
+    border: 1px solid gray;
+    background-color: white;
+    color: #2e2e2e
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #45356D;
+    color: #E7E7E7;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #6750A4;
+}
+
+.contact-img {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contact-img img {
+    width: 90%;
+}
+
+@media (max-width:900px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10% 0 10% 0;
+    }
+
+    .contact-form {
+        width: 110%;
+    }
+
+    .form-header {
+        padding-top: 10%;
+        font-size: 25px;
+    }
+}
+
+/*****HEADER&FOOTER*****/
+
+header {
+    background-color: hsla(256, 32%, 90%, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4% 7%;
+}
+
+.logo img {
+    display: block;
+}
+
+header a {
+
+    text-decoration: none;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header ul li {
+    margin-right: 1rem;
+    color: hsla(256, 34%, 32%, 1);
+}
+
+.user_btn_container {
+    display: flex;
+    gap: 2rem;
+}
+
+.user_btn {
+    width: 9rem;
+    height: 3rem;
+    border: 1px solid #45356D;
+    background-color: #45356D;
+    border-radius: 4px;
+    color: #FBF6F5;
+}
+
+.login_btn {
+    background-color: #E1DCED;
+    color: #45356D;
+}
+
+.toggle_menu {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+footer {
+    background-color: hsla(256, 34%, 32%, 1);
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 2rem; */
+    padding: 3rem 3.5rem;
+}
+
+.footer_logo {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.footer-name {
+    color: hsla(0, 0%, 91%, 1);
+    margin-bottom: 1.8rem;
+}
+
+.social-media-container {
+    color: hsla(0, 0%, 91%, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.social-media-container div {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.footer-pages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.footer-pages a {
+    color: hsla(0, 0%, 91%, 1);
+    text-decoration: none;
+}
+
+@media screen and (max-width:1140px) {
+    header {
+        padding: .6rem 7%;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .user_btn_container {
+        display: none;
+    }
+
+    .toggle_menu {
+        display: block;
+        height: 1.7rem;
+    }
+
+    .toggle_menu_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .mobile-menu {
+        background: white;
+        height: 93.2vh;
+        width: 100vw;
+        position: absolute;
+        top: 6.8%;
+        left: 0;
+        padding: 2rem;
+    }
+
+    .mobile-menu_list {
+        color: black;
+    }
+
+    .mobile-menu_btn {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .mobile-menu_list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 7rem;
+    }
+
+    .mobile-menu_list li a {
+        color: black;
+    }
+
+    .active {
+        display: block;
+        animation: fadeIn 500ms ease-in-out;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .footer_logo {
+        text-align: start;
+    }
+
+    .footer-pages {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
