@@ -55,6 +55,7 @@ body{
 }
 .hero-img{
 width: 22.5rem;
+padding-bottom: 10rem;
 }
 .hero-img img{
     width: 100%;
@@ -108,6 +109,30 @@ margin: 1rem 0;
     font-size: 1.3rem;
 }
 
+.question{
+    font-family: "Josefin Sans";
+   text-align: center;
+   margin-top: 1rem;
+   width: 100%;
+}
+
+#sign_in_button{
+    background: white;
+    display: block;
+    border: 1px solid black;
+    width: 14rem;
+    height: 3rem;
+    margin: auto;
+    margin-top: 2rem;
+    font-family: "Josefin Sans";
+    font-size: 1.1rem;
+ border-radius: 4px;
+}
+#sign_in_button a{
+   color: rgb(34, 34, 34);
+   text-decoration: none;
+
+}
 footer{
     background-color: hsla(256, 34%, 32%, 1);
     display: flex;
@@ -155,9 +180,13 @@ margin-top: 4rem;
         display: none;
     
     }
-    .hero-img{
-        
-        }
+    .question{
+        font-family: "Josefin Sans";
+       text-align: center;
+       margin-top: 1rem;
+       width: 100%;
+    }
+   
   
 }
 @media screen and (max-width:700px) {
@@ -177,6 +206,9 @@ margin-top: 4rem;
     .footer-pages{
         flex-direction: column;
         gap: 2rem;
+    }
+    .hero-img{
+        padding-bottom: 0;
     }
 }
 
