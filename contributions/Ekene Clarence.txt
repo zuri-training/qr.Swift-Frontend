@@ -1,3 +1,5 @@
 https://github.com/zuri-training/Team-56_QR-GEN-Frontend/pull/17
 https://github.com/zuri-training/Team-56_QR-GEN-Frontend/issues/6
 https://github.com/zuri-training/Team-56_QR-GEN-Frontend/pull/34
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/pull/39
+https://github.com/zuri-training/Team-56_QR-GEN/pull/1

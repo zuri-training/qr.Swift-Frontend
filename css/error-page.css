@@ -8,102 +8,96 @@
 }
 
 main {
+    height: 66vh;
     background-color: #E7E7E7;
-
 }
 
 .container {
-    padding: 3% 0% 3% 0%;
-    width: 80%;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    padding: 10% 25%;
+    color: #2B2B2B;
 }
 
-.form-header {
-    font-size: 40px;
+.page-head {
     font-weight: bold;
-    color: #45356D;
+    font-size: 45px;
+    margin-bottom: 2%;
 }
 
-.contact-form p {
-    width: 90%;
-    margin-top: 3%;
-    font-size: 18px;
-    color: #2e2e2e
+.page-pgraph {
+    margin-top: 5%;
+    font-size: 20px;
+    line-height: 24px;
 }
 
-.contact-form table {
-    width: 90%;
+hr {
+    border: 2px solid #45356D;
+    width: 30%;
+    margin: auto;
 }
 
-.contact-form td {
-    padding-top: 3%;
-    font-size: 16px;
-    color: #2e2e2e
-}
-
-.contact-form input {
-    width: 100%;
-    margin-top: -2%;
-    border: 1px solid gray;
-    background-color: #E7E7E7;
-    font-size: 16px;
-    padding: 12px;
-}
-
-.contact-form textarea {
-    width: 100%;
-    font-size: 22px;
-    padding: 12px;
-    border: 1px solid gray;
-    background-color: white;
-    color: #2e2e2e
-}
-
-.contact-form button {
-    padding: 15px;
+.page-btn button {
+    margin-top: 5%;
+    padding: 15px 95px;
     background-color: #45356D;
     color: #E7E7E7;
     border-radius: 3px;
     border: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-.contact-form button:hover {
+.page-btn button:hover {
     background: #6750A4;
 }
 
-.contact-img {
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.contact-img img {
-    width: 90%;
-}
-
-@media (max-width:900px) {
+@media (max-width:500px) {
     .container {
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 10% 0 10% 0;
+        text-align: center;
+        padding: 25% 0%;
     }
 
-    .contact-form {
-        width: 110%;
+    .page-head {
+        font-size: 40px;
+        margin-bottom: 4%;
     }
 
-    .form-header {
-        padding-top: 10%;
-        font-size: 25px;
+    .page-pgraph {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        margin-top: 8%;
+        font-size: 20px;
+        line-height: 24px;
     }
 
-    form {
-        margin-top: 3%;
+    hr {
+        width: 43%;
+    }
+
+    .page-btn button {
+        margin-top: 5%;
+        /* margin-bottom: 10%; */
+        padding: 15px 95px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:320px) {
+    main {
+        height: 90vh;
+    }
+
+    .page-head {
+        font-size: 30px;
+    }
+
+    .page-btn {
+        margin-bottom: 20%;
     }
 }
+
+
 
 /*****HEADER&FOOTER*****/
 
@@ -113,8 +107,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.4% 7%;
-    position: sticky;
-    top: 0;
 }
 
 .logo img {
@@ -239,7 +231,7 @@ footer {
         height: 93.2vh;
         width: 100vw;
         position: absolute;
-        top: 100%;
+        top: 6.8%;
         left: 0;
         padding: 2rem;
     }

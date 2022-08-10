@@ -1,0 +1,7 @@
+Developed the Create -QR section and features for both desktop and mobile view
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/pull/37
+
+Developed the static and Dynamic feature page for QR-Swift for both desktop and mobile view. 
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/pull/13
+
+Designed the data schema for QR_Swift

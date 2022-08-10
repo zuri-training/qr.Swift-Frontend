@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/sign-in.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <figure class="logo">
+            <img src="../assets/images/Logo(1).svg" alt="logo"/>
+        </figure>
+    </header>
+
+
+    <main>
+          <section>
+            <figure class="bg-img"><img src="../assets/images/sign-in-illustration.svg" alt="sign-up_illustration"></figure>
+            <div class="container">
+                <div class="heading">
+                    <div class="main-heading"> Welcome back!</div>
+                    <div class="main-subheading">Please input your details below to sign in</div>
+                </div> 
+              <form
+                  name="sign-in"
+                  id="form"
+                  method="get"
+                  onsubmit="return validation();"
+                >
+                  
+                  <div class="form_inputs">
+                    <div class="form_title">Email</div>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="johndoe@gmail.com"
+                    />
+                  </div>
+                  <div class="form_inputs">
+                    <div class="form_title">Password</div>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      minlength="8"
+                      placeholder="Enter password"
+                    />
+                    <div class="forgot">
+                        <a href="">Forgot password?</a>
+                    </div>
+                  </div>
+
+                  <div class="sign-in">
+                    <button type="submit" id="sign-in" class="email">Sign in with Email</button>
+                  </div>
+                  
+                  <div class="or">
+                    <span class="hr"><hr class="left"></span><p class="hr-or">OR</p><span class="hr"><hr class="right"></span>
+                  </div>
+
+                  <div class="sign-in">
+                    <button type="submit" id="sign-in" class="google"><img src="../assets/images/logo googleg 48dp.svg" alt=""> Sign in with Google</button>
+                  </div>
+                  
+                  <div class="sign-in facebook">
+                    <button type="submit" id="sign-in" class="facebook"><img src="../assets/images/facebook-icon.svg" alt=""> Sign in with Facebook</button>
+                  </div>
+                  
+                  <div class="new">Are you new to Qr.Swift? <a href="">Create account</a></div>
+                </form>
+              
+             
+            </div>
+    
+           
+          </section>
+        </main>
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_logo"><img src="../assets/images/qrSwift_logo.svg" alt="logo"></div>
+        <h2 class="footer-name">QR.SWIFT</h2>
+        <div class="social-media-container">
+            <p>Please connect us via</p>
+            <div>
+                <a href="" target="_blank"><img src="../assets/images/linkedin-icon.svg" alt="linkedin"></a>
+                <a href="" target="_blank"><img src="../assets/images/instagram-icon.svg" alt="instagram"></a>
+                <a href="" target="_blank"><img src="../assets/images/slack-icon.svg" alt="slack"></a>
+                <a href="" target="_blank"><img src="../assets/images/facebook-icon.svg" alt="facebook"></a>
+                <a href="" target="_blank"><img src="../assets/images/twitter-icon.svg" alt="twitter"></a>
+
+            </div>
+        </div>
+        <div class="footer-pages">
+            <a href="">About us</a>
+            <a href="">FAQ</a>
+            <a href="">Contact us</a>
+            <a href="">API</a>
+            <a href="">Demo</a>
+            <a href="">Terms and Condition</a>
+            <a href="">Privacy</a>
+        </div>
+    </footer>
+    <script ></script>
+</body>
+
+</html>
