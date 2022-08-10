@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up | qr.Swift</title>
+
+    <link rel="stylesheet" href="../css/sign-up.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <figure class="logo"
+        ><img src="../assets/images/Logo(1).svg" alt="logo"
+      /></figure>
+    </header>
+
+    <main>
+         
+    <figure class="mobile-hero-img hero-img"><img src="../assets/images/sign-up_illustration.svg" alt="sign-up_illustration"></figure>
+      <div class="heading">
+        <div class="main_heading"> Lets Get Started </div>
+        <div class="main_subheading">
+          Create an account to see all features
+        </div>
+      </div>
+
+      <section class="form_section">
+        <div class="form-container">
+          <form
+              name="registration"
+              id="form"
+              method="get"
+              onsubmit="return validation();"
+            >
+              <div class="form_inputs">
+                <div class="form_title">First name</div>
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  placeholder="John"
+                />
+              </div>
+              <div class="form_inputs">
+                <div class="form_title">Last name</div>
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  placeholder="Doe"
+                />
+              </div>
+              <div class="form_inputs">
+                <div class="form_title">Username</div>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="John"
+                />
+              </div>
+              <div class="form_inputs">
+                <div class="form_title">Email</div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="johndoe@gmail.com"
+                />
+              </div>
+              <div class="form_inputs">
+                <div class="form_title">Password</div>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  minlength="8"
+                  placeholder="Enter password"
+                />
+              </div>
+              <div class="register_button_2">
+                <button type="submit" id="register_button_2">Register</button>
+              </div>
+            </form>
+          <div class="question"> Already have an account? </div>
+          
+            <button id="sign_in_button"
+              ><a href="sign-in.html">Sign in</a></button
+            >
+         
+        </div>
+
+        <div class="hero-img desktop-hero-img">
+          <img
+            src="../assets/images/sign-up_illustration.svg"
+            alt="hero-img"
+            id="hero-img"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer>
+      <div class="footer_logo"
+        ><img src="../assets/images/qrSwift_logo.svg" alt="logo"
+      /></div>
+      <h2 class="footer-name">QR.SWIFT</h2>
+      <div class="social-media-container">
+        <p>Please connect us via</p>
+        <div>
+          <a href="" target="_blank"
+            ><img src="../assets/images/linkedin-icon.svg" alt="linkedin"
+          /></a>
+          <a href="" target="_blank"
+            ><img src="../assets/images/instagram-icon.svg" alt="instagram"
+          /></a>
+          <a href="" target="_blank"
+            ><img src="../assets/images/slack-icon.svg" alt="slack"
+          /></a>
+          <a href="" target="_blank"
+            ><img src="../assets/images/facebook-icon.svg" alt="facebook"
+          /></a>
+          <a href="" target="_blank"
+            ><img src="../assets/images/twitter-icon.svg" alt="twitter"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-pages">
+        <a href="">About us</a>
+        <a href="">FAQ</a>
+        <a href="">Contact us</a>
+        <a href="">API</a>
+        <a href="">Demo</a>
+        <a href="">Terms and Condition</a>
+        <a href="">Privacy</a>
+      </div>
+    </footer>
+  </body>
+</html>
