@@ -20,6 +20,7 @@ header {
 
 .logo img {
     display: block;
+    cursor: pointer;
 }
 
 header a {
@@ -50,13 +51,20 @@ header ul li {
     background-color: #45356D;
     border-radius: 4px;
     color: #FBF6F5;
+    transition:all 250ms ease-in-out; 
 }
-
+.user_btn:hover{
+    background-color: #584588;
+}
 .login_btn {
     background-color: #E1DCED;
     color: #45356D;
+    transition:all 250ms ease-in-out; 
 }
+.login_btn:hover{
+    background: whitesmoke;
 
+}
 .toggle_menu {
     display: none;
 }
@@ -615,8 +623,8 @@ footer {
 
 /* RESPONSIVE */
 
-@media (max-width:1395px) {
-
+@media (max-width:1440px) {
+   
     .midtext {
         width: 120%;
     }
@@ -758,6 +766,7 @@ footer {
 }
 
 @media (max-width:900px) {
+
     .hero {
         padding: 0% 0% 0% 0%;
     }

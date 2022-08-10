@@ -11,11 +11,42 @@ toggleMenu.addEventListener("click", function () {
 });
 
 
+const registerBtn = document.querySelectorAll(".register_btn")
+const loginBtn = document.querySelectorAll(".login_btn");
+const demoBtn = document.querySelector(".demo_btn");
+const staticBtn = document.querySelector(".static_btn")
+const dynamicBtn = document.querySelector(".dynamic_btn")
 const HeaderLogo = document.querySelector(".header-logo");
+
+
 
 HeaderLogo.addEventListener("click", ()=>{
   window.location.href = "index.html"
 })
+
+
+registerBtn.forEach(btn => {
+    btn.addEventListener("click", ()=>{
+        window.location.href = "sign-up.html"
+    })
+})
+
+loginBtn.forEach(btn => {
+    btn.addEventListener("click", ()=>{
+        window.location.href = "sign-in.html"
+    })
+})
+
+demoBtn.addEventListener("click", ()=>{
+    window.location.href = "demo.html"
+})
+staticBtn.addEventListener("click", ()=>{
+    window.location.href = "staticqr.html"
+})
+dynamicBtn.addEventListener("click", ()=>{
+    window.location.href = "dynamicqr.html"
+})
+
 
 
 
