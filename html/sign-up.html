@@ -17,13 +17,13 @@
   <body>
     <header>
       <figure class="logo"
-        ><img src="../assets/images/Logo(1).svg" alt="logo"
+        onclick=homeClick()><img src="../assets/images/Logo(1).svg" alt="logo"
       /></figure>
     </header>
 
     <main>
          
-    <figure class="mobile-hero-img hero-img"><img src="../assets/images/sign-up_illustration.svg" alt="sign-up_illustration"></figure>
+    <figure class="mobile-hero-img hero-img" ><img src="../assets/images/sign-up_illustration.svg" alt="sign-up_illustration" ></figure>
       <div class="heading">
         <div class="main_heading"> Lets Get Started </div>
         <div class="main_subheading">
@@ -34,18 +34,19 @@
       <section class="form_section">
         <div class="form-container">
           <form
-              name="registration"
-              id="form"
-              method="get"
-              onsubmit="return validation();"
+           
+              id="register_form"
+              method="post"
+              
             >
               <div class="form_inputs">
                 <div class="form_title">First name</div>
                 <input
                   type="text"
                   name="first_name"
-                  id="first_name"
+                  id="reg_first_name"
                   placeholder="John"
+                  required
                 />
               </div>
               <div class="form_inputs">
@@ -53,8 +54,9 @@
                 <input
                   type="text"
                   name="last_name"
-                  id="last_name"
+                  id="reg_last_name"
                   placeholder="Doe"
+                  required
                 />
               </div>
               <div class="form_inputs">
@@ -62,8 +64,9 @@
                 <input
                   type="text"
                   name="username"
-                  id="username"
+                  id="reg_username"
                   placeholder="John"
+                  required
                 />
               </div>
               <div class="form_inputs">
@@ -71,8 +74,9 @@
                 <input
                   type="email"
                   name="email"
-                  id="email"
+                  id="reg_email"
                   placeholder="johndoe@gmail.com"
+                  required
                 />
               </div>
               <div class="form_inputs">
@@ -80,20 +84,20 @@
                 <input
                   type="password"
                   name="password"
-                  id="password"
+                  id="reg_password"
                   minlength="8"
                   placeholder="Enter password"
                 />
               </div>
               <div class="register_button_2">
-                <button type="submit" id="register_button_2">Register</button>
+                <button type="submit" id="register_button_2" style="cursor: pointer;">Register</button>
               </div>
             </form>
           <div class="question"> Already have an account? </div>
           
-            <button id="sign_in_button"
-              ><a href="sign-in.html">Sign in</a></button
-            >
+         <a href="sign-in.html" style="text-decoration: none; cursor: pointer;"><button id="sign_in_button"
+               style="cursor: pointer;" >Sign in</button</a>
+            
          
         </div>
 
@@ -136,13 +140,20 @@
       </div>
       <div class="footer-pages">
         <a href="">About us</a>
-        <a href="">FAQ</a>
-        <a href="">Contact us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact-us.html">Contact us</a>
         <a href="">API</a>
-        <a href="">Demo</a>
-        <a href="">Terms and Condition</a>
-        <a href="">Privacy</a>
+        <a href="demo.html">Demo</a>
+        <a href="#">Terms and Condition</a>
+        <a href="#">Privacy</a>
       </div>
     </footer>
+
+    <script src="../javascript/register.js"></script>
+    <script>
+      const  homeClick =()=>{
+   window.location.href = "index.html"
+       }
+     </script>
   </body>
 </html>
