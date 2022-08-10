@@ -1,1 +1,3 @@
 https://github.com/zuri-training/Team-56_QR-GEN-Frontend/pull/16
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/blob/main/html/demo.html
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/blob/main/css/demo.css
