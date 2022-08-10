@@ -1,0 +1,16 @@
+Created Header and Footer for our Website: 
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/pull/8
+
+Was Responsible for reviewing codes on the frontend and making neccessary adjustments:
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/commit/081757879ad24fdf1178033ad731751ef4e1c012
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/commit/b3feb1a462f2a059b7b541225fcd1d4a1714215b
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/commit/3b63a421d39e31eab7d6165d98a93d09d26b22b2
+
+
+Created User Authentication API that contains Login,Register and Get User Views on the Backend
+https://github.com/zuri-training/Team-56_QR-GEN/pull/4
+
+Worked on finding suitable QR library the team can use on the backend, which we later adopted
+https://github.com/zuri-training/Team-56_QR-GEN/commit/fa4d1be5ec52fc24b8ad46b0bb934870920c392f
+https://github.com/zuri-training/Team-56_QR-GEN/commit/554fe6bdf1d3dbdf4bea108ba6727bd7e9bb0b3f
+https://github.com/zuri-training/Team-56_QR-GEN/commit/09a96e4d320330dcad1b34d27937ef3c2191aa2e

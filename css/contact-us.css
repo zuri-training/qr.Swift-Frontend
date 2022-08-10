@@ -109,6 +109,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.4% 7%;
+    position: sticky;
+    top: 0;
 }
 
 .logo img {
@@ -233,7 +235,7 @@ footer {
         height: 93.2vh;
         width: 100vw;
         position: absolute;
-        top: 6.8%;
+        top: 100%;
         left: 0;
         padding: 2rem;
     }
