@@ -42,6 +42,6 @@ function showSlides(n) {
 }
 const HeaderLogo = document.querySelector(".header-logo");
 
-HeaderLogo.addEventListener("click", ()=>{
-  window.location.href = "index.html"
+HeaderLogo.addEventListener("click", () => {
+    window.location.href = "index.html"
 })
