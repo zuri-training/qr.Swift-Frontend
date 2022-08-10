@@ -315,7 +315,7 @@ td {
 /* MID-BOTTOM */
 .midheadr3 {
     color: #2E2E2E;
-    padding: 3% 20% 3% 20%;
+    padding: 8% 20% 3% 20%;
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
@@ -1016,7 +1016,7 @@ footer {
         transition: background-color 0.6s ease;
     }
 
-    .active,
+    .dot.active,
     .dot:hover {
         background-color: #717171;
     }
@@ -1151,9 +1151,6 @@ footer {
 
     .midheadr3 {
         padding: 5% 0% 0% 0%;
-    }
-
-    .midheadr3 {
         font-size: 30px;
         text-align: center;
     }
@@ -1171,7 +1168,6 @@ footer {
     #grid4 img {
         width: 100%;
         margin: 0%;
-        /* padding: 0%; */
     }
 
     .midheadr4 {
@@ -1186,7 +1182,7 @@ footer {
         width: 75%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 5%;
+        padding-top: 12%;
         margin-bottom: 0%;
     }
 

@@ -47,8 +47,8 @@ const demoBtn = document.querySelector(".demo_btn");
 const staticBtn = document.querySelector(".static_btn")
 const dynamicBtn = document.querySelector(".dynamic_btn")
 
-HeaderLogo.addEventListener("click", ()=>{
-  window.location.href = "index.html"
+HeaderLogo.addEventListener("click", () => {
+    window.location.href = "index.html"
 })
 
 registerBtn.forEach(btn => {
