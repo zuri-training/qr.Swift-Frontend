@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-color:hsla(256, 32%, 90%, 1);
+}
+header{
+    background-color:hsla(256, 32%, 90%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4% 7%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img{
+    display: block;
+    height: 3.8rem;
+}
+
+/************ sign-in_form******************************************/
+main{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 1rem;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+figure.bg-img{
+    width: 23rem;
+    margin: 4%;
+    
+    
+    
+}
+figure.bg-img img{
+    width: 23rem;
+    
+}
+div.container{
+    height: 100vh;
+    padding: 5px;
+    width: 23rem;
+    margin: 4%;
+    
+}
+.heading{
+    text-align: center;
+}
+.heading .main-heading{
+    color: #1b1b1b;
+    font-size: 28px;
+    font-weight: 600;
+}
+.heading .main-subheading{
+    color: #9d9d9d;
+    font-size: 17px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 2rem;
+}
+.form_title{
+    margin-bottom: 0.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.form_inputs{
+    width: 100%;
+    height: 4rem;
+    margin: 1rem 0;
+
+}
+.form_inputs input{
+    width: 100%;
+    height: 2.5rem;
+    padding: 0 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+   
+}
+div.forgot a, div.new a{
+    text-decoration: none;
+    color: hsla(256, 34%, 32%, 1);
+}
+div.sign-in{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sign-in{
+    width: 100%;
+    height: 3rem;
+    
+    border-radius: 4px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.sign-in .email{
+    background:hsla(256, 34%, 32%, 1);
+    border: 0;
+    color: hsla(256, 32%, 90%, 1);
+    margin-bottom: 1.45rem;
+    margin-top: 3rem;
+}
+div.hr{
+    width: 100%;
+}
+div.or{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p.hr-or{
+    margin: 1rem;
+}
+span.hr{
+    width: 9.5rem;
+}
+span.hr hr{
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: #1b1b1b;
+    background-image: linear-gradient(to right, #333, #333, #333);
+}
+.sign-in .google{
+    margin-top: 1.45rem;
+}
+
+.sign-in .facebook{
+   
+    margin-top: 3rem;
+}
+.sign-in .google, .sign-in .facebook{
+    background: transparent;
+    color: #9d9d9d;
+    border: 1px solid #9d9d9d; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.new{
+    color: #1b1b1b;
+    font-weight: 500;
+}
+
+
+
+
+
+/************end_sign-in_form******************************************/
+
+footer{
+    background-color: hsla(256, 34%, 32%, 1);
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 3rem 3.5rem;
+   
+}
+.footer_logo{
+   
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.footer-name{
+    color: hsla(0, 0%, 91%, 1);
+    margin-bottom: 1.8rem;
+}
+.social-media-container{
+   color:hsla(0, 0%, 91%, 1) ;
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+}
+.social-media-container div{
+   display: flex;
+   gap: 0.7rem;
+ }
+ .footer-pages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4rem;
+ }
+ .footer-pages a{
+    color: hsla(0, 0%, 91%, 1);
+    text-decoration: none;
+
+ }
+ @media screen and (max-width: 640px) {
+    main{
+        height: 170vh;
+    }
+    figure.bg-img{
+        width: 19rem;
+        margin: 4%;
+        
+        
+        
+    }
+    figure.bg-img img{
+        width: 18rem;
+        
+    }
+    div.container{
+        height: 100vh;
+        padding: 5px;
+        width: 19rem;
+        margin: 4%;
+        
+    }
+    span.hr{
+        width: 7.5rem;
+    }
+    .heading .main-subheading{
+        color: #9d9d9d;
+        font-size: 19px;
+    }
+ }
+@media screen and (max-width:1140px) {
+    header{
+        padding: .6rem 7%;
+    }
+    header ul{
+        display: none;
+    
+    }
+    .question{
+        font-family: "Josefin Sans";
+       text-align: center;
+       margin-top: 1rem;
+       width: 100%;
+    }
+   
+  
+}
+@media screen and (max-width:700px) {
+   .mobile-hero-img{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   }
+   .desktop-hero-img{
+    display: none;
+   }
+    .footer_logo{
+   text-align: start;
+    }  
+    .footer-pages{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .hero-img{
+        padding-bottom: 0;
+    }
+}
+
+
+
+
+
+
