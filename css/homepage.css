@@ -79,6 +79,7 @@ header ul li {
 .hero {
     background: #E7E7E7;
     padding: 0% 15% 0% 15%;
+
 }
 
 .herocontent {
@@ -87,31 +88,32 @@ header ul li {
 }
 
 .herotext {
-    width: 60%;
+    width: 70%;
     padding-top: 40px;
 }
 
 .revolution {
     color: #2E2E2E;
     padding-top: 50px;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bolder;
     text-align: center;
     line-height: 70px;
 }
 
 .sss {
-    color: #2E2E2E;
+    color: rgba(46, 46, 46,0.9);
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     padding-top: 50px;
-    font-size: 40px;
+    font-size: 34px;
     font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
+  
 }
 
 .illus1 {
@@ -126,6 +128,7 @@ header ul li {
 .herobtns {
     display: flex;
     flex-direction: row;
+    margin-top: 3rem;
 }
 
 .herobutton {
@@ -136,10 +139,11 @@ header ul li {
     border: 1px solid #6750A4;
     margin: 20px;
     font-size: 25px;
+    border-radius: 4px;
 }
 
 .herobutton:hover {
-    background: #45356D;
+    background: rgba(69, 53, 109,0.5);
     color: #E7E7E7;
     /* color: #EBD4CB; */
 }
@@ -526,6 +530,7 @@ footer {
 @media screen and (max-width:1140px) {
     header {
         padding: .6rem 7%;
+       
     }
 
     header ul {

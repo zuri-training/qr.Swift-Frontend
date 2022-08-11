@@ -15,7 +15,15 @@
         </figure>
         <ul>
 
-            <li><a href="">QR.Codes</a></li>
+            <li >
+                <p style="cursor: pointer;" class="qr-codes-header"> QR.Codes <span>&bigtriangledown;</span></p>
+                <div class="qr-container-header" style="display: none;">
+                    <ul>
+                        <li><a href="">QR.Codes</a></li>
+                        <li><a href="">QR.Codes</a></li>
+                    </ul>
+                </div>
+            </li>
             <li><a href="">API</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="why-us.html">Why Us?</a></li>
@@ -326,6 +334,14 @@
         </div>
     </footer>
     <script src="../javascript/homepage.js"></script>
+    <script>
+        const qr_codes = document.querySelector(".qr-codes-header");
+        const qr_container = document.querySelector(".qr-container-header");
+        qr_codes.addEventListener("click", ()=>{
+            qr_container.style.display = "block"
+        })
+
+    </script>
 </body>
 
 </html>

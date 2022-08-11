@@ -95,8 +95,8 @@
             </form>
           <div class="question"> Already have an account? </div>
           
-         <a href="sign-in.html" style="text-decoration: none; cursor: pointer;"><button id="sign_in_button"
-               style="cursor: pointer;" >Sign in</button</a>
+        <button id="sign_in_button"
+               style="cursor: pointer;" onclick=signInClick()>Sign in</button>
             
          
         </div>
@@ -153,6 +153,9 @@
     <script>
       const  homeClick =()=>{
    window.location.href = "index.html"
+       }
+       const signInClick =()=>{
+        window.location.href = "sign-in.html"
        }
      </script>
   </body>
