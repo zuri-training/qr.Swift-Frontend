@@ -3,7 +3,7 @@
 const loginForm = document.querySelector("#login_form")
 
 
-const api_endpoint = ""
+const api_endpoint = "http://127.0.0.1:8000/api/login/"
 
 const loginDetails = new FormData()
 
@@ -12,7 +12,7 @@ const login= ()=>{
 
 loginForm.addEventListener("submit", (e)=>{
 e.preventDefault()
-loginDetails.append("email", document.getElementById("login_email").value)
+loginDetails.append("username", document.getElementById("login_username").value)
 loginDetails.append("password", document.getElementById("login_password").value)
 
 fetch(api_endpoint,{
@@ -20,7 +20,18 @@ fetch(api_endpoint,{
     body: loginDetails,
 })
 .then(res => res.json())
-.then(data => console.log(data))
+.then(data => {
+    console.log(data)
+                    if(data.token){
+                       
+                        window.location.href = "dashboard.html"
+                        
+
+                    }else{
+                        alert("Login Failed")
+                    }
+}
+    )
 .catch(err => console.log(err))
 })
 }
@@ -29,11 +40,3 @@ login()
 
 
 
-
-const Logout= ()=>{
-
-}
-
-const GetUser = ()=>{
-
-}

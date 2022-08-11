@@ -19,118 +19,69 @@
     
     <header>
       <figure class="logo"><img src="../assets/images/Logo(1).svg" alt="logo" /></figure>
-      <p>johndoe@outlook.com</p>
-      <ul>
-        <li><a href="">QR.Codes</a></li>
-        <li><a href="">API</a></li>
-        <li><a href="">FAQ</a></li>
-        <li><a href="">Why Us?</a></li>
-        <li><a href="">Contact Us</a></li>
-      </ul>
-      <div class="user_btn_container">
-        <button class="user_btn">Register</button>
-        <button class="user_btn login_btn">Login</button>
-      </div>
-      <div class="toggle_menu">
-        <img
-          src="../assets/images/hamburger-mobile.svg"
-          alt="hamburger"
-          class="toggle_menu_img"
-        />
-        <img
-          src="../assets/close-square.svg"
-          alt="close hamburger"
-          class="toggle_menu_img show"
-        />
-      </div>
+   
+<div class="email_toggle">
+  <p class="user-email">
+    myemail@gmail.com
+  </p>
+
+  <div class="toggle_menu">
+    <img src="../assets/images/hamburger-mobile.svg" alt="hamburger" class="toggle_menu_img">
+    <img src="../assets/images/close-square.svg" alt="close hamburger" class="toggle_menu_img  show">
+  </div>
+</div>
+     
+
+      
 
       <div class="mobile-menu">
-        <div class="mobile-menu_btn">
-          <button class="user_btn">Register</button>
-          <button class="user_btn login_btn">Login</button>
-        </div>
-        <ul class="mobile-menu_list">
-          <li><a href="">QR.Codes</a></li>
-          <li><a href="">API</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">Why Us?</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
+       <ul>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="account-setting.html">Account Settings</a></li>
+        <li><a href="demo.html">How to use</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="api.html">API</a></li>
+        <li><a href="index.html">Logout</a></li>
+       </ul>
       </div>
+        
     </header>
     <main>
-        <div class="top">
-          <div class="user_block">
-           <img  src="" alt="image">
-           <p>johndoe@outlook.com</p>
-           <p>John Doe</p>
-           
-           <p style="font-size: 1.6vw; font-weight:600;">All Generated Qr Code <span>(4)</span></p>
-
-           <input type="search" name="search" placeholder="Search Qr Code">
-           <button class="search-btn">Search</button>
-          </div>
-          <div class="generate_block">
-            <button class="generate-btn">+ Generate Qr code</button>
-          </div>
+      <div class="user-info">
+        <div class="first">
+          <img src="../assets/images/profile-circle.svg"/>
+          <p class="user-fullname">John Doe</p>
         </div>
-        <div class="wrapper">
-          <div class="first_grid">
-            <div class="download_block">
-                <img src="" alt="qr-image">
-                <p>qr.swift.com/yhsuso</p>
-                <button class="download-btn">Download</button>
-            </div>
-            <div class="context">
-                <p class="title">My Twitter handle</p>
-                <p>Social Media</p>
-                <p>Edit Content</p>
-                <p><span>0 </span>Scan(s)</p>
-                <p>August 07, 2022</p>
+        <p class="second user-email">mymail@gmail.com</p>
+      </div>
 
-            </div>
-          </div>
-          <div class="second_grid">
-            <div class="download_block"> 
-                <img src="" alt="qr-image">
-                <p>qr.swift.com/ossjbk</p>
-                <button class="download-btn">Download</button></div>
-            <div class="context">
-                <p  class="title">My lovely picture</p>
-                <p>Images</p>
-                <p>Edit Content</p>
-                <p><span>2 </span>Scans</p>
-                <p>August 05, 2022</p>
-            </div>
-          </div>
-          <div class="third_grid">
-            <div class="download_block"> 
-                <img src="" alt="qr-image">
-                <p>qr.swift.com/unhwm</p>
-                <button class="download-btn">Download</button></div>
-            <div class="context">
-                <p class="title">Untitled</p>
-                <p>PDF</p>
-                <p>Edit Content</p>
-                <p><span>10 </span>Scans</p>
-                <p>July 29, 2022</p>
-            </div>
-          </div>
-          <div class="forth_grid">
-            <div class="download_block"> 
-                <img src="" alt="qr-image">
-                <p>qr.swift.com/osiejk</p>
-                <button class="download-btn">Download</button></div>
-            <div class="context">
-                <p class="title">Notion Portfolio</p>
-                <p>Website URL</p>
-                <p>Edit Content</p>
-                <p><span>5 </span>Scans</p>
-                <p>July 25, 2022</p>
-            </div>
-          </div>
-          </div>
-        </div>
+    <div class="all-gen-qr">
+      <img src="../assets/images/mdi_hexagon-multiple.svg" >
+      <p>All Generated Qr Codes</p>
+    </div>
+    <div class="search-genqr">
+      <div class="search">
+        <input type="text" disabled>
+        <button type="button">Search</button>
+      </div>
+      <div class="genqr">
+        <button>&plus; Generate Qr Code</button>
+      </div>
+    </div>
+    <section class="qr-section">
+ <div class="qr-container">
+  <div class="qr-code">
+    <img src="../assets/images/qr1.png" alt="">
+    <button type="button">Download</button>
+  </div>
+  <div class="qr-code-info">
+    <h2>Qr Code</h2>
+    <p class="share-btn">Share</p>
+    <p class="date-created">August 07,2022</p>
+  </div>
+ </div>
+    </section>
     </main>
     <footer>
         <div class="footer_logo">
@@ -167,7 +118,16 @@
           <a href="">Privacy</a>
         </div>
       </footer>
-      <script src="../assets/images/header&footer.js"></script>
+      <script>
+        const toggleMenu = document.querySelector(".toggle_menu");
+
+
+toggleMenu.addEventListener("click", function () {
+  document.querySelector(".mobile-menu").classList.toggle("active");
+  toggleMenu.children.item(0).classList.toggle("show");
+  toggleMenu.children.item(1).classList.toggle("show");
+});
+      </script>
     </body>
   </html>
   
