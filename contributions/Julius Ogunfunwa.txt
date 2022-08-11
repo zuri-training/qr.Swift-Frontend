@@ -1,0 +1,8 @@
+Created the models for Qr (id, content, userid, typeofQrcode)
+https://github.com/zuri-training/Team-56_QR-GEN/commit/57e5601fae4199e3b1b82d2a6a93471bb63c7b3c
+
+Created the FAQ page
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/commit/f91da3a563be52b75b4bc0b8f5caa70767df617d
+
+Created the Why-us page
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/commit/833a48727a013370be8c7f210e779d7a9f5d5e57
