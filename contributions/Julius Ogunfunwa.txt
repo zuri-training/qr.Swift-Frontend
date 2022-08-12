@@ -6,3 +6,6 @@ https://github.com/zuri-training/Team-56_QR-GEN-Frontend/commit/f91da3a563be52b7
 
 Created the Why-us page
 https://github.com/zuri-training/Team-56_QR-GEN-Frontend/commit/833a48727a013370be8c7f210e779d7a9f5d5e57
+
+Created the Customers testimony page
+https://github.com/zuri-training/Team-56_QR-GEN-Frontend/commit/08a371fad3f0f847703cbd8033f54703155b4545
