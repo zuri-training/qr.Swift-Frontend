@@ -2,6 +2,7 @@
 
 const loginForm = document.querySelector("#login_form")
 
+let userData = {}
 
 const api_endpoint = "http://127.0.0.1:8000/api/login/"
 
@@ -21,10 +22,16 @@ fetch(api_endpoint,{
 })
 .then(res => res.json())
 .then(data => {
-    console.log(data)
+
+    userData = data
+    console.log(userData)
+
+
+   
                     if(data.token){
-                       
-                        window.location.href = "dashboard.html"
+                        
+                        
+                        window.location.href="dashboard.html?data="+JSON.stringify(userData)
                         
 
                     }else{
@@ -37,6 +44,5 @@ fetch(api_endpoint,{
 }
 
 login()
-
-
+localStorage.setItem("userData", JSON.stringify(userData))
 
