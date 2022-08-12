@@ -55,9 +55,7 @@ header ul li {
 .mobile-menu {
   display: none;
 }
-.mobile_show{
-  display: none;
-}
+
 h1,
 #addText,
 #qrcode {
@@ -69,12 +67,14 @@ h1,
 h1 {
   font-size: 3rem;
 }
+.mobile_show{
+    display: none;
+  }
 main {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   display: flex;
 }
-#enc,
 input {
   padding: 1em;
   width: 100%;
@@ -85,9 +85,7 @@ input {
 input:focus {
   border: 4px solid hsla(256, 34%, 32%, 1);
 }
-#enc {
-  color: rgb(53, 51, 51);
-}
+
 h1 {
   font-weight: 700;
   font-size: 2rem;
@@ -100,12 +98,7 @@ h1 {
   font-weight: 600;
   margin-left: 5em;
 }
-.tick {
-  display: flex;
-}
-#hidden {
-  margin-right: 23em;
-}
+
 #print,
 #generate {
   width: 50%;
@@ -190,6 +183,54 @@ button:hover {
 }
 
 @media screen and (max-width: 700px) {
+    .mobile_show {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 700;
+        width: 60%;
+      }
+      .mobile_hide {
+        display: none;
+      }
+      h1,
+      #addText,
+      #qrcode {
+        width: 30vw;
+        margin: 2rem auto;
+        font: 1rem sans-serif;
+      }
+      main {
+        flex-direction: column;
+      }
+      .wrap {
+        width: 80%;
+        margin: 1em;
+      }
+    
+      .code {
+        width: 50vw;
+      }
+      #print {
+        font-size: 1rem;
+        width: 100%;
+      }
+      #generate {
+        margin-left: -8em;
+      }
+      main {
+        flex-direction: column;
+      }
+      .wrap {
+        width: 80%;
+        margin: 1em;
+      }
+      #qrcode {
+        margin-left: 1em;
+        margin-top: -2em;
+      }
+      .code {
+        width: 55vw;
+      }
   #bottom-word {
     display: flex;
     flex-direction: column;
@@ -206,53 +247,9 @@ button:hover {
   font-size: 30px;
 }
 @media screen and (max-width: 700px) {
-  .mobile_show {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 700;
-    width: 60%;
-  }
-  .mobile_hide {
-    display: none;
-  }
-  h1,
-  #addText,
-  #qrcode {
-    width: 30vw;
-    margin: 2rem auto;
-    font: 1rem sans-serif;
-  }
-  main {
-    flex-direction: column;
-  }
-  .wrap {
-    width: 80%;
-    margin: 1em;
-  }
-
-  .code {
-    width: 50vw;
-  }
-  #print {
-    font-size: 1rem;
+  bottom-word > h3 {
+    font-size: 10px;
     width: 100%;
-  }
-  #generate {
-    margin-left: -8em;
-  }
-  main {
-    flex-direction: column;
-  }
-  .wrap {
-    width: 80%;
-    margin: 1em;
-  }
-  #qrcode {
-    margin-left: 1em;
-    margin-top: -2em;
-  }
-  .code {
-    width: 55vw;
   }
 }
 
