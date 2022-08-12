@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wifi</title>
+    <link rel="import" href="../assets/header&footer.html">
     <link rel="stylesheet" href="/css/wifi.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,17 +58,17 @@
         </div>
       </header>
     <main>
-
+      <h1 class="mobile_show">GENERATE QR CODE</h1>
 <form id="addPost" method="post">
     <div class="wrap">
-        <h1>GENERATE QR CODE</h1>
+        <h1 class="mobile_hide">GENERATE QR CODE</h1>
    <label class="title">SSID:</label>
     <input id="ssid" placeholder="SSID" required></label>
     <br>
     <label class="title">
         Authentication:
       </label>
-        <select id="enc" required>
+        <select id="authentication" required>
           <option>Choose an option</option>
            <option>WPA</option>
            <option>WEP</option>
@@ -77,7 +78,7 @@
     <input id="password" placeholder="Password" required></label>
     <br>
    <div class="tick">
-   <label class="title">Hidden</label>
+   <label class="title">Hidden:</label>
     <input type="checkbox" id="hidden" required>
     </div>
        <br>

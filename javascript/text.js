@@ -11,7 +11,6 @@ toggleMenu.addEventListener("click", function() {
     toggleMenu.children.item(1).classList.toggle("show")
 });
 
-
 document.getElementById('generate').addEventListener('click', generate);
 document.getElementById('addPost').addEventListener('submit', addPost);
 

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Url</title>
     <link rel="import" href="../assets/header&footer.html">
-    <link rel="stylesheet" href="/css/url.css">
+    <title>Location</title>
+    <link rel="stylesheet" href="/css/location.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script src="/javascript/url.js" defer></script>
+    <script src="/javascript/location.js" defer></script>
 </head>
 <body>
     <header>
@@ -49,7 +49,10 @@
             <button class="user_btn login_btn">Login</button>
           </div>
           <ul class="mobile-menu_list">
-            <li><a href="">QR.Codes</a></li>
+            <li><a href="">QR.Codes</a></li>      <h1 class="mobile_show">GENERATE QR CODE</h1>
+<form id="addPost" method="post">
+    <div class="wrap">
+        <h1 class="mobile_hide">GENERATE QR CODE</h1>
             <li><a href="">API</a></li>
             <li><a href="">FAQ</a></li>
             <li><a href="">Why Us?</a></li>
@@ -58,14 +61,13 @@
         </div>
       </header>
     <main>
-
       <h1 class="mobile_show">GENERATE QR CODE</h1>
 <form id="addPost" method="post">
     <div class="wrap">
         <h1 class="mobile_hide">GENERATE QR CODE</h1>
-   <label class="title">Enter URL:</label>
-    <input id="url" placeholder="URL link" required></label>
-       </div>
+   <label class="title">Enter Location:</label>
+
+   <input id="location" type="text" class="form-control large" placeholder="Write Your Address">
        <br>
        <br>
    <button id="generate" onclick="generate()">Generate</button>
