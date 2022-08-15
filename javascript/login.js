@@ -24,14 +24,14 @@ fetch(api_endpoint,{
 .then(data => {
 
     userData = data
-    console.log(userData)
+    console.log(userData.id)
 
 
    
                     if(data.token){
                         
                         
-                        window.location.href="dashboard.html?data="+JSON.stringify(userData)
+                        window.location.href="dashboard.html?data="+JSON.stringify(userData.id)
                         
 
                     }else{

@@ -1,9 +1,9 @@
-"strict mode";
+
+
 
 
 const toggleMenu = document.querySelector(".toggle_menu");
-const img = document.createElement("img");
-img.src
+
 
 toggleMenu.addEventListener("click", function() {
     document.querySelector(".mobile-menu").classList.toggle("active");
@@ -11,40 +11,36 @@ toggleMenu.addEventListener("click", function() {
     toggleMenu.children.item(1).classList.toggle("show")
 });
 
+const downloadbtn = document.querySelector("#print")
 
-document.getElementById('generate').addEventListener('click', generate);
-document.getElementById('addPost').addEventListener('submit', addPost);
+let imageLink;
+document.getElementById('generate').addEventListener('click', addPost);
 
-function generate(){
-     fetch('http://127.0.0.1:8080')
-     .then((res) => res.json())
-     .then((data) => {
-        let output = '<h2>Posts</h2>';
-        data.forEach(function(post){
-            output +=
-            <div> 
-                <p>${post.url}</p>
-                <p>${post.code}</p>
-            </div>;
-     });
-     document.getElementById('output').innerHTML = output;
-    })
 
-}
+
+
 function addPost(e){
     e.preventDefault();
-    let url = document.getElementById('url').Value;
-    let code = code.getElementById('code').value
+    let url = document.getElementById('url').value;
+ 
 
-    fetch('http://127.0.0.1:8080', {
+    fetch('https://qrswiftapp.herokuapp.com/api/create-qr/', {
         method: 'POST',
         headers:{
             'Accept': 'application/json, text/Plain, */*',
             'Content-type':'application/json'
         },
-        body: JSON.stringify({url:url,code:code})
+        body: JSON.stringify({qr_type: "URL", url:url,userId : 12})
 
     })
     .then((res) => res.json())
-    .then((data) => console.log(data))
+    .then((data) => {
+        document.querySelector(".code").src = "https://qrswiftapp.herokuapp.com"+ data.qr.qr_code
+        imageLink = "https://qrswiftapp.herokuapp.com"+ data.qr.qr_code
+        console.log(data, data.qr.qr_code)})
 }
+
+downloadbtn.addEventListener("click", ()=>{
+ 
+})
+
