@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zuri-training/Team-56_QR-GEN-Frontend/issues"
   },
-  "homepage": "https://github.com/zuri-training/Team-56_QR-GEN-Frontend#readme"
+  "homepage": "https://github.com/zuri-training/Team-56_QR-GEN-Frontend#readme",
+  "dependencies": {
+    "downloadjs": "^1.4.7"
+  }
 }
