@@ -41,6 +41,32 @@ function addPost(e){
 }
 
 downloadbtn.addEventListener("click", ()=>{
- 
+    const element = document.createElement("a")
+    element.setAttribute("href", imageLink)
+    element.setAttribute("download", "image.png" )
+    document.body.appendChild(element)
+    element.click()
 })
 
+
+const shareData = {
+    title: 'QR',
+    text: 'My Qr Image',
+    url: imageLink
+  }
+  
+  const btn = document.querySelector('.sharebtn');
+ // const resultPara = document.querySelector('.result');
+  
+  // Share must be triggered by "user activation"
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.share(shareData);
+     // resultPara.textContent = 'MDN shared successfully';
+
+    } catch (err) {
+      //resultPara.textContent = `Error: ${err}`;
+      console.log(err)
+    }
+  });
+  
