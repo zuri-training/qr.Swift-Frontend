@@ -4,7 +4,7 @@ const loginForm = document.querySelector("#login_form")
 
 let userData = {}
 
-const api_endpoint = "http://127.0.0.1:8000/api/login/"
+const api_endpoint = "https://qrswiftapp.herokuapp.com/api/login/"
 
 const loginDetails = new FormData()
 
