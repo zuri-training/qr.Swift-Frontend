@@ -72,9 +72,11 @@ const shareData = {
   // Share must be triggered by "user activation"
   btn.addEventListener('click', async () => {
     try {
-      await navigator.share(shareData);
-     // resultPara.textContent = 'MDN shared successfully';
-
+        await navigator.share({
+            files: imageLink,
+            title: "Images"
+            
+          });
     } catch (err) {
       //resultPara.textContent = `Error: ${err}`;
       console.log(err)

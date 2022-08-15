@@ -49,12 +49,7 @@ downloadbtn.addEventListener("click", ()=>{
 })
 
 
-const shareData = {
-    imageLink,
-    title: "Images",
-    text: "My Qr Image"
-    
-  }
+
   
   const btn = document.querySelector('.sharebtn');
  // const resultPara = document.querySelector('.result');
@@ -62,7 +57,11 @@ const shareData = {
   // Share must be triggered by "user activation"
   btn.addEventListener('click', async () => {
     try {
-      await navigator.share(shareData);
+      await navigator.share({
+        files: imageLink,
+        title: "Images"
+        
+      });
      // resultPara.textContent = 'MDN shared successfully';
 
     } catch (err) {
