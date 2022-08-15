@@ -2,54 +2,82 @@
 
 
 const toggleMenu = document.querySelector(".toggle_menu");
-const img = document.createElement("img");
-img.src
 
+
+
+let imageLink;
 toggleMenu.addEventListener("click", function() {
     document.querySelector(".mobile-menu").classList.toggle("active");
     toggleMenu.children.item(0).classList.toggle("show")
     toggleMenu.children.item(1).classList.toggle("show")
 });
 
-document.getElementById('generate').addEventListener('click', generate);
+
 document.getElementById('addPost').addEventListener('submit', addPost);
 
-function generate(){
-     fetch('http://127.0.0.1:8080')
-     .then((res) => res.json())
-     .then((data) => {
-        let output = '<h2>Posts</h2>';
-        data.forEach(function(post){
-            output +=
-            <div> 
-                <p>${post.ssid}</p>
-                <p>${post.authentication}</p> 
-                <p>${post.password}</p>
-                <p>${post.hidden}</p>
-                <p>${post.code}</p>
-            </div>;
-     });
-     document.getElementById('output').innerHTML = output;
-    })
+const downloadbtn = document.querySelector("#print")
 
-}
+
+
 function addPost(e){
     e.preventDefault();
-    let ssid = document.getElementById('ssid').Value;
-    let authentication = document.getElementById('authentication').Value;
-    let password = document.getElementById('password').Value; 
-    let hidden = document.getElementById('hidden').Value;
-    let code = code.getElementById('code').value
+    let ssid = document.getElementById('ssid').value;
+    let authentication = document.getElementById('authentication').value;
+    let password = document.getElementById('password').value; 
+    let hidden = document.getElementById('hidden').value;
 
-    fetch('https://qrswiftapp.herokuapp.com/api/create_qr/', {
+
+    fetch('https://qrswiftapp.herokuapp.com/api/create-qr/', {
         method: 'POST',
         headers:{
             'Accept': 'application/json, text/Plain, */*',
             'Content-type':'application/json'
         },
-        body: JSON.stringify({ssid:ssid, authentication:authentication, password:password, hidden:hidden, code:code})
+        body: JSON.stringify({ssid:ssid, authentication:authentication, password:password, hidden:false  ,userId : 12, qr_type: "WIFI"})
 
     })
     .then((res) => res.json())
-    .then((data) => console.log(data))
+    .then((data) => {
+        document.querySelector(".code").src = "https://qrswiftapp.herokuapp.com"+ data.qr.qr_code
+        imageLink = "https://qrswiftapp.herokuapp.com"+ data.qr.qr_code
+        console.log(data, data.qr.qr_code)
+    })
 }
+
+
+
+
+
+
+
+downloadbtn.addEventListener("click", ()=>{
+    const element = document.createElement("a")
+    element.setAttribute("href", imageLink)
+    element.setAttribute("download", "image.png" )
+    document.body.appendChild(element)
+    element.click()
+})
+
+
+const shareData = {
+    imageLink,
+    title: "Images",
+    text: "My Qr Image"
+    
+  }
+  
+  const btn = document.querySelector('.sharebtn');
+ // const resultPara = document.querySelector('.result');
+  
+  // Share must be triggered by "user activation"
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.share(shareData);
+     // resultPara.textContent = 'MDN shared successfully';
+
+    } catch (err) {
+      //resultPara.textContent = `Error: ${err}`;
+      console.log(err)
+    }
+  });
+  

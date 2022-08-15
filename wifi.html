@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wifi</title>
-  <link rel="import" href="../assets/header&footer.html">
-  <link rel="stylesheet" href="../css/wifi.css">
+  <link rel="import" href="assets/header&footer.html">
+  <link rel="stylesheet" href="css/wifi.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  <script src="../javascript/wifi.js" defer></script>
+  <script src="javascript/wifi.js" defer></script>
 </head>
 
 <body>
   <header>
-    <figure class="logo"><img src="../assets/images/Logo(1).svg" alt="logo" /></figure>
+    <figure class="logo"><img src="assets/images/Logo(1).svg" alt="logo" /></figure>
 
     <ul>
       <li><a href="index.html">QR.Codes</a></li>
@@ -30,8 +30,8 @@
       <button class="user_btn login_btn">Login</button>
     </div>
     <div class="toggle_menu">
-      <img src="../assets/images/hamburger-mobile.svg" alt="hamburger" class="toggle_menu_img" />
-      <img src="../assets/close-square.svg" alt="close hamburger" class="toggle_menu_img show" />
+      <img src="assets/images/hamburger-mobile.svg" alt="hamburger" class="toggle_menu_img" />
+      <img src="assets/close-square.svg" alt="close hamburger" class="toggle_menu_img show" />
     </div>
 
     <div class="mobile-menu">
@@ -70,35 +70,36 @@
         <br>
         <div class="tick">
           <label class="title">Hidden:</label>
-          <input type="checkbox" id="hidden" required>
+          <input type="checkbox" id="hidden">
         </div>
 
       </div>
 
-      <button id="generate" onclick="generate()">Generate</button>
+      <button id="generate">Generate</button>
     </form>
     </div>
     <div id="qrcode">
-      <img class="code" src="/assets/images/qr1.png" alt="qr-code">
+      <img class="code" src="assets/images/qr1.png" alt="qr-code">
       <br>
       <br>
-      <button id="print" onclick="print()">Download Code</button>
+      <button id="print">Download Code</button>
+      <button class="sharebtn" style="padding-left: 0.5rem; padding:0.5rem; background:darkgray; border:none; border-radius: 4px; margin: 1rem" >Share Code</button>
     </div>
     </div>
   </main>
   <footer>
     <div class="footer_logo">
-      <img src="../assets/images/qrSwift_logo.svg" alt="logo" />
+      <img src="assets/images/qrSwift_logo.svg" alt="logo" />
     </div>
     <h2 class="footer-name">QR.SWIFT</h2>
     <div class="social-media-container">
       <p>Please connect us via</p>
       <div>
-        <a href="" target="_blank"><img src="../assets/images/linkedin-icon.svg" alt="linkedin" /></a>
-        <a href="" target="_blank"><img src="../assets/images/instagram-icon.svg" alt="instagram" /></a>
-        <a href="" target="_blank"><img src="../assets/images/slack-icon.svg" alt="slack" /></a>
-        <a href="" target="_blank"><img src="../assets/images/facebook-icon.svg" alt="facebook" /></a>
-        <a href="" target="_blank"><img src="../assets/images/twitter-icon.svg" alt="twitter" /></a>
+        <a href="" target="_blank"><img src="assets/images/linkedin-icon.svg" alt="linkedin" /></a>
+        <a href="" target="_blank"><img src="assets/images/instagram-icon.svg" alt="instagram" /></a>
+        <a href="" target="_blank"><img src="assets/images/slack-icon.svg" alt="slack" /></a>
+        <a href="" target="_blank"><img src="assets/images/facebook-icon.svg" alt="facebook" /></a>
+        <a href="" target="_blank"><img src="assets/images/twitter-icon.svg" alt="twitter" /></a>
       </div>
     </div>
     <div class="footer-pages">
@@ -112,7 +113,7 @@
     </div>
   </footer>
   <div id="output"></div>
-  <script src="../assets/images/header&footer.js"></script>
+  <script src="assets/images/header&footer.js"></script>
 </body>
 
 </html>
