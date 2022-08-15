@@ -2,7 +2,7 @@
 
 const registerForm = document.querySelector("#register_form")
 
-const api_endpoint = " http://127.0.0.1:8000/api/register/"
+const api_endpoint = " https://qrswiftapp.herokuapp.com/api/register/"
 
 const registerDetails = new FormData()
 
