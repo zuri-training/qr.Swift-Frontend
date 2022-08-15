@@ -1,4 +1,4 @@
-import download from "downloadjs";
+
 
 
 
@@ -41,6 +41,6 @@ function addPost(e){
 }
 
 downloadbtn.addEventListener("click", ()=>{
- download(imageLink)
+ 
 })
 
