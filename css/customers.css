@@ -8,6 +8,73 @@
 main {
   background: #e7e7e7;
 }
+header {
+  background-color: hsla(256, 32%, 90%, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4% 7%;
+  position: sticky;
+  top: 0;
+}
+
+.logo img {
+  display: block;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header ul li {
+  margin-right: 1rem;
+  color: hsla(256, 34%, 32%, 1);
+}
+
+.user_btn_container {
+  display: flex;
+  gap: 2rem;
+}
+
+.user_btn {
+  width: 9rem;
+  height: 3rem;
+  border: 1px solid #45356d;
+  background-color: #45356d;
+  border-radius: 4px;
+  color: #fbf6f5;
+  cursor: pointer;
+}
+
+.user_btn:hover {
+  background-color: #e1dced;
+  color: hsla(256, 34%, 32%, 1);
+}
+
+.login_btn {
+  background-color: #e1dced;
+  color: #45356d;
+  cursor: pointer;
+}
+
+.login_btn:hover {
+  color: #fbf6f5;
+  background-color: #45356d;
+}
+
+.toggle_menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
 
 h1,
 h2,
