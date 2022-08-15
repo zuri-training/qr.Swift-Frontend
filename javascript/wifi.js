@@ -41,7 +41,7 @@ function addPost(e){
     let hidden = document.getElementById('hidden').Value;
     let code = code.getElementById('code').value
 
-    fetch('http://127.0.0.1:8080', {
+    fetch('https://qrswiftapp.herokuapp.com/api/create_qr/', {
         method: 'POST',
         headers:{
             'Accept': 'application/json, text/Plain, */*',
