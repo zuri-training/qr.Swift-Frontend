@@ -51,8 +51,7 @@ downloadbtn.addEventListener("click", ()=>{
 
 const shareData = {
     title: 'QR',
-    text: 'My Qr Image',
-    url: imageLink
+    imageLink
   }
   
   const btn = document.querySelector('.sharebtn');
